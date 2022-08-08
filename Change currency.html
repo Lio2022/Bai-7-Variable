@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Money</title>
+    <style>
+        td{
+            width : 300px;
+        }
+    </style>
+    <script src="Change money.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <td><strong>Amount</strong></td>
+        <td><strong>From Currency</strong></td>
+        <td><strong>To Currency</strong></td>
+    </tr>
+    <tr>
+        <td><input tupe="text" id="Amount"/></td>
+        <td><select id="From">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select></td>
+        <td><select id="To">
+            <option value="USD">USD</option>
+            <option value="VND">VND</option>
+        </select></td>
+        <td><button onclick= "ChangeMoney()">Convert</button></td>
+    </tr>
+</table>
+<br>
+<p id="Result"></p>
+
+</body>
+
+</html>
